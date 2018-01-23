@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Media from './src/playlist/components/media'
+import Playlist from './src/playlist/components/Playlist'
+import data from './src/api.json';
 
 const app = document.getElementById('app');
 {/*const holaMundo = <h1>Hello Worldss</h1>;*/}
 
 // ReactDOM.render(que voy a renderizar, donde lo haré);
-ReactDOM.render(<Media type="video" title="¿Qué es?" author="Leonidas Esteban" image="./images/covers/bitcoin.jpg"/>, app);
+ReactDOM.render(<Playlist data={data}/>, app);
 
 // console.log('Hello World');
